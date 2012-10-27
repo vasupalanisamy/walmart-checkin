@@ -59,8 +59,12 @@
         delegate.loggedIn = @"TRUE";
         delegate.profileId = [json objectForKey:@"id"];
         self.tabBar.title = @"My Account";
-        self.photo.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:
+        if([json objectForKey:@"pictureURL"] != [NSNull null]) {
+            self.photo.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:
                                                    [NSURL URLWithString: [json objectForKey:@"pictureURL"]]]];
+        } else {
+            self.photo.image = nil;
+        }
         self.myAccount.hidden = NO;
         NSString *custNameLbl = [json objectForKey:@"firstName"];
         custNameLbl = [custNameLbl stringByAppendingString:@" "];
@@ -76,6 +80,7 @@
     self.error.text = @"";
     CheckinAppDelegate *delegate =  [[UIApplication sharedApplication] delegate];
     delegate.loggedIn = @"FALSE";
+    delegate.profileId = @"";
     self.tabBar.title = @"Login";
     self.myAccount.hidden = YES;
     self.userName.text = @"";

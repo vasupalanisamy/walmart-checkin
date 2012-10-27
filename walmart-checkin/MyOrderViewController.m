@@ -51,7 +51,7 @@
         [message show];
     }
     RestClient *client = [[RestClient alloc] init];
-    self.orders = [client fetchOrders:@"1"];
+    self.orders = [client fetchOrders:delegate.profileId];
     
     NSLog(@"order id %@", [[self.orders objectAtIndex:0] objectForKey:@"orderId"]);
 }
