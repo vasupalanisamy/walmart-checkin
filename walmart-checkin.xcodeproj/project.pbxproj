@@ -1,0 +1,337 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		69275F1B163518D3006F031F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69275F1A163518D3006F031F /* UIKit.framework */; };
+		69275F1D163518D3006F031F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69275F1C163518D3006F031F /* Foundation.framework */; };
+		69275F1F163518D3006F031F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69275F1E163518D3006F031F /* CoreGraphics.framework */; };
+		69275F25163518D3006F031F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 69275F23163518D3006F031F /* InfoPlist.strings */; };
+		69275F27163518D3006F031F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 69275F26163518D3006F031F /* main.m */; };
+		69275F2B163518D3006F031F /* CheckinAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 69275F2A163518D3006F031F /* CheckinAppDelegate.m */; };
+		69275F2D163518D3006F031F /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 69275F2C163518D3006F031F /* Default.png */; };
+		69275F2F163518D3006F031F /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 69275F2E163518D3006F031F /* Default@2x.png */; };
+		69275F31163518D3006F031F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 69275F30163518D3006F031F /* Default-568h@2x.png */; };
+		69275F34163518D3006F031F /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69275F32163518D3006F031F /* MainStoryboard.storyboard */; };
+		69275F37163518D3006F031F /* CheckinViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69275F36163518D3006F031F /* CheckinViewController.m */; };
+		69275F4F1636F21F006F031F /* HomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69275F4E1636F21F006F031F /* HomePageViewController.m */; };
+		69275F6F16390EBD006F031F /* MyOrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69275F6E16390EBD006F031F /* MyOrderViewController.m */; };
+		69275F73163911A2006F031F /* MyTabBarControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69275F72163911A2006F031F /* MyTabBarControllerViewController.m */; };
+		69275F76163920E6006F031F /* RestClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 69275F75163920E6006F031F /* RestClient.m */; };
+		69275F7C163A76BF006F031F /* OrderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 69275F7B163A76BE006F031F /* OrderTableViewCell.m */; };
+		69275F7F163A8235006F031F /* OrderDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69275F7E163A8235006F031F /* OrderDetailViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		69275F16163518D3006F031F /* walmart-checkin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "walmart-checkin.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		69275F1A163518D3006F031F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		69275F1C163518D3006F031F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		69275F1E163518D3006F031F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		69275F22163518D3006F031F /* walmart-checkin-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "walmart-checkin-Info.plist"; sourceTree = "<group>"; };
+		69275F24163518D3006F031F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		69275F26163518D3006F031F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		69275F28163518D3006F031F /* walmart-checkin-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "walmart-checkin-Prefix.pch"; sourceTree = "<group>"; };
+		69275F29163518D3006F031F /* CheckinAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CheckinAppDelegate.h; sourceTree = "<group>"; };
+		69275F2A163518D3006F031F /* CheckinAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CheckinAppDelegate.m; sourceTree = "<group>"; };
+		69275F2C163518D3006F031F /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		69275F2E163518D3006F031F /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		69275F30163518D3006F031F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		69275F33163518D3006F031F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		69275F35163518D3006F031F /* CheckinViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CheckinViewController.h; sourceTree = "<group>"; };
+		69275F36163518D3006F031F /* CheckinViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CheckinViewController.m; sourceTree = "<group>"; };
+		69275F4D1636F21F006F031F /* HomePageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePageViewController.h; sourceTree = "<group>"; };
+		69275F4E1636F21F006F031F /* HomePageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePageViewController.m; sourceTree = "<group>"; };
+		69275F6D16390EBD006F031F /* MyOrderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyOrderViewController.h; sourceTree = "<group>"; };
+		69275F6E16390EBD006F031F /* MyOrderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyOrderViewController.m; sourceTree = "<group>"; };
+		69275F71163911A2006F031F /* MyTabBarControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTabBarControllerViewController.h; sourceTree = "<group>"; };
+		69275F72163911A2006F031F /* MyTabBarControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTabBarControllerViewController.m; sourceTree = "<group>"; };
+		69275F74163920E6006F031F /* RestClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RestClient.h; sourceTree = "<group>"; };
+		69275F75163920E6006F031F /* RestClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RestClient.m; sourceTree = "<group>"; };
+		69275F7A163A76BE006F031F /* OrderTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderTableViewCell.h; sourceTree = "<group>"; };
+		69275F7B163A76BE006F031F /* OrderTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderTableViewCell.m; sourceTree = "<group>"; };
+		69275F7D163A8235006F031F /* OrderDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderDetailViewController.h; sourceTree = "<group>"; };
+		69275F7E163A8235006F031F /* OrderDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderDetailViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		69275F13163518D3006F031F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69275F1B163518D3006F031F /* UIKit.framework in Frameworks */,
+				69275F1D163518D3006F031F /* Foundation.framework in Frameworks */,
+				69275F1F163518D3006F031F /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		69275F0B163518D3006F031F = {
+			isa = PBXGroup;
+			children = (
+				69275F20163518D3006F031F /* walmart-checkin */,
+				69275F19163518D3006F031F /* Frameworks */,
+				69275F17163518D3006F031F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		69275F17163518D3006F031F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				69275F16163518D3006F031F /* walmart-checkin.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		69275F19163518D3006F031F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				69275F1A163518D3006F031F /* UIKit.framework */,
+				69275F1C163518D3006F031F /* Foundation.framework */,
+				69275F1E163518D3006F031F /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		69275F20163518D3006F031F /* walmart-checkin */ = {
+			isa = PBXGroup;
+			children = (
+				69275F29163518D3006F031F /* CheckinAppDelegate.h */,
+				69275F2A163518D3006F031F /* CheckinAppDelegate.m */,
+				69275F32163518D3006F031F /* MainStoryboard.storyboard */,
+				69275F35163518D3006F031F /* CheckinViewController.h */,
+				69275F36163518D3006F031F /* CheckinViewController.m */,
+				69275F21163518D3006F031F /* Supporting Files */,
+				69275F4D1636F21F006F031F /* HomePageViewController.h */,
+				69275F4E1636F21F006F031F /* HomePageViewController.m */,
+				69275F6D16390EBD006F031F /* MyOrderViewController.h */,
+				69275F6E16390EBD006F031F /* MyOrderViewController.m */,
+				69275F71163911A2006F031F /* MyTabBarControllerViewController.h */,
+				69275F72163911A2006F031F /* MyTabBarControllerViewController.m */,
+				69275F74163920E6006F031F /* RestClient.h */,
+				69275F75163920E6006F031F /* RestClient.m */,
+				69275F7A163A76BE006F031F /* OrderTableViewCell.h */,
+				69275F7B163A76BE006F031F /* OrderTableViewCell.m */,
+				69275F7D163A8235006F031F /* OrderDetailViewController.h */,
+				69275F7E163A8235006F031F /* OrderDetailViewController.m */,
+			);
+			path = "walmart-checkin";
+			sourceTree = "<group>";
+		};
+		69275F21163518D3006F031F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				69275F22163518D3006F031F /* walmart-checkin-Info.plist */,
+				69275F23163518D3006F031F /* InfoPlist.strings */,
+				69275F26163518D3006F031F /* main.m */,
+				69275F28163518D3006F031F /* walmart-checkin-Prefix.pch */,
+				69275F2C163518D3006F031F /* Default.png */,
+				69275F2E163518D3006F031F /* Default@2x.png */,
+				69275F30163518D3006F031F /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		69275F15163518D3006F031F /* walmart-checkin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69275F3A163518D3006F031F /* Build configuration list for PBXNativeTarget "walmart-checkin" */;
+			buildPhases = (
+				69275F12163518D3006F031F /* Sources */,
+				69275F13163518D3006F031F /* Frameworks */,
+				69275F14163518D3006F031F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "walmart-checkin";
+			productName = "walmart-checkin";
+			productReference = 69275F16163518D3006F031F /* walmart-checkin.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		69275F0D163518D3006F031F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = Checkin;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = com.walmart.;
+			};
+			buildConfigurationList = 69275F10163518D3006F031F /* Build configuration list for PBXProject "walmart-checkin" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 69275F0B163518D3006F031F;
+			productRefGroup = 69275F17163518D3006F031F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				69275F15163518D3006F031F /* walmart-checkin */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		69275F14163518D3006F031F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69275F25163518D3006F031F /* InfoPlist.strings in Resources */,
+				69275F2D163518D3006F031F /* Default.png in Resources */,
+				69275F2F163518D3006F031F /* Default@2x.png in Resources */,
+				69275F31163518D3006F031F /* Default-568h@2x.png in Resources */,
+				69275F34163518D3006F031F /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		69275F12163518D3006F031F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69275F27163518D3006F031F /* main.m in Sources */,
+				69275F2B163518D3006F031F /* CheckinAppDelegate.m in Sources */,
+				69275F37163518D3006F031F /* CheckinViewController.m in Sources */,
+				69275F4F1636F21F006F031F /* HomePageViewController.m in Sources */,
+				69275F6F16390EBD006F031F /* MyOrderViewController.m in Sources */,
+				69275F73163911A2006F031F /* MyTabBarControllerViewController.m in Sources */,
+				69275F76163920E6006F031F /* RestClient.m in Sources */,
+				69275F7C163A76BF006F031F /* OrderTableViewCell.m in Sources */,
+				69275F7F163A8235006F031F /* OrderDetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		69275F23163518D3006F031F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				69275F24163518D3006F031F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		69275F32163518D3006F031F /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				69275F33163518D3006F031F /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		69275F38163518D3006F031F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		69275F39163518D3006F031F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		69275F3B163518D3006F031F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "walmart-checkin/walmart-checkin-Prefix.pch";
+				INFOPLIST_FILE = "walmart-checkin/walmart-checkin-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		69275F3C163518D3006F031F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "walmart-checkin/walmart-checkin-Prefix.pch";
+				INFOPLIST_FILE = "walmart-checkin/walmart-checkin-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		69275F10163518D3006F031F /* Build configuration list for PBXProject "walmart-checkin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69275F38163518D3006F031F /* Debug */,
+				69275F39163518D3006F031F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		69275F3A163518D3006F031F /* Build configuration list for PBXNativeTarget "walmart-checkin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69275F3B163518D3006F031F /* Debug */,
+				69275F3C163518D3006F031F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 69275F0D163518D3006F031F /* Project object */;
+}
