@@ -9,6 +9,7 @@
             <objects>
                 <tabBarController definesPresentationContext="YES" id="rld-su-t3j" customClass="MyTabBarControllerViewController" sceneMemberID="viewController">
                     <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="om8-JR-bvH">
                         <rect key="frame" x="129" y="330" width="163" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
@@ -140,7 +141,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bou-Lz-pSx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-345" y="-659"/>
+            <point key="canvasLocation" x="-885" y="-1325"/>
         </scene>
         <!--Order Detail View Controller - Order Details-->
         <scene sceneID="iRQ-VY-WcV">
@@ -234,6 +235,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="M33-W9-ODd" kind="push" id="i2Q-ew-sTm"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -284,14 +288,105 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nrM-PN-ICp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="87" y="-659"/>
+            <point key="canvasLocation" x="-403" y="-1325"/>
+        </scene>
+        <!--Store Address View Controller-->
+        <scene sceneID="dZY-ht-vOz">
+            <objects>
+                <viewController id="M33-W9-ODd" customClass="StoreAddressViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ueh-QF-mPX">
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="You are checking in to" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SvY-PM-de3">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="dza-tf-2dz"/>
+                                    <constraint firstAttribute="width" constant="160" id="jBv-Wh-AwG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Store Name" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="274" translatesAutoresizingMaskIntoConstraints="NO" id="ZUo-yR-WfO">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Xmq-75-Asj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Located at" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HbQ-Od-hQe">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="jyc-LJ-LzR"/>
+                                    <constraint firstAttribute="width" constant="80" id="zms-wl-ubA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Address" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="274" translatesAutoresizingMaskIntoConstraints="NO" id="se3-le-MF4">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="swX-bN-9ay"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="14"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Distance and ETA" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="272" translatesAutoresizingMaskIntoConstraints="NO" id="9NA-NL-vLf">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="272" id="mxd-Ea-QlN"/>
+                                    <constraint firstAttribute="height" constant="93" id="qlC-jb-HsF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1fe-5s-fGh">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Continue">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="SvY-PM-de3" firstAttribute="top" secondItem="Ueh-QF-mPX" secondAttribute="top" constant="20" symbolic="YES" type="default" id="5sI-Mu-gcB"/>
+                            <constraint firstAttribute="trailing" secondItem="ZUo-yR-WfO" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="8L7-TK-YlO"/>
+                            <constraint firstItem="HbQ-Od-hQe" firstAttribute="top" secondItem="Ueh-QF-mPX" secondAttribute="top" constant="107" id="CAe-fJ-4EY"/>
+                            <constraint firstItem="se3-le-MF4" firstAttribute="leading" secondItem="HbQ-Od-hQe" secondAttribute="leading" type="default" id="CGa-Wt-ozf"/>
+                            <constraint firstItem="9NA-NL-vLf" firstAttribute="leading" secondItem="Ueh-QF-mPX" secondAttribute="leading" constant="26" id="FkC-wb-yyv"/>
+                            <constraint firstItem="ZUo-yR-WfO" firstAttribute="leading" secondItem="SvY-PM-de3" secondAttribute="leading" type="default" id="Hpe-Y0-fHe"/>
+                            <constraint firstAttribute="bottom" secondItem="1fe-5s-fGh" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="N2a-kd-sRg"/>
+                            <constraint firstItem="ZUo-yR-WfO" firstAttribute="top" secondItem="Ueh-QF-mPX" secondAttribute="top" constant="55" id="TQX-gi-eDp"/>
+                            <constraint firstItem="HbQ-Od-hQe" firstAttribute="leading" secondItem="ZUo-yR-WfO" secondAttribute="leading" type="default" id="ZQS-Fh-msy"/>
+                            <constraint firstItem="se3-le-MF4" firstAttribute="top" secondItem="Ueh-QF-mPX" secondAttribute="top" constant="138" id="axH-0U-ism"/>
+                            <constraint firstItem="1fe-5s-fGh" firstAttribute="centerX" secondItem="Ueh-QF-mPX" secondAttribute="centerX" type="default" id="fM6-J8-g8X"/>
+                            <constraint firstItem="1fe-5s-fGh" firstAttribute="top" secondItem="9NA-NL-vLf" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="pBG-Y6-kEZ"/>
+                            <constraint firstItem="9NA-NL-vLf" firstAttribute="leading" secondItem="se3-le-MF4" secondAttribute="leading" type="default" id="rgJ-KE-C7q"/>
+                            <constraint firstAttribute="trailing" secondItem="se3-le-MF4" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="rgq-fj-Bzf"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="CFY-a1-nw6"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="address" destination="se3-le-MF4" id="3ml-2Y-yRU"/>
+                        <outlet property="distanceMessage" destination="9NA-NL-vLf" id="HXr-1K-qEz"/>
+                        <outlet property="storeName" destination="ZUo-yR-WfO" id="uL8-DY-uzg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iY2-Tj-w5G" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="43" y="-1325"/>
         </scene>
         <!--Checkin View Controller - loginScreen-->
         <scene sceneID="5">
             <objects>
                 <viewController storyboardIdentifier="loginScreen" title="loginScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="2" customClass="CheckinViewController" sceneMemberID="viewController">
                     <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="3">
-                        <rect key="frame" x="0.0" y="20" width="320" height="499"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="411"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" text="vpalanisamy@walmart.com" borderStyle="roundedRect" placeholder="Email" clearsOnBeginEditing="YES" minimumFontSize="17" background="Default-568h@2x.png" translatesAutoresizingMaskIntoConstraints="NO" id="ZXQ-9O-M2j">
@@ -413,6 +508,7 @@
                     <tabBarItem key="tabBarItem" title="Login" id="dHe-vK-mDN"/>
                     <navigationItem key="navigationItem" id="WP3-Ht-vna"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
                         <outlet property="MyAccount" destination="0Qa-Tw-s32" id="Xac-Gx-Ysm"/>
                         <outlet property="custEmail" destination="kRO-DQ-beO" id="YqL-dt-Yx8"/>
@@ -426,7 +522,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1309" y="231"/>
+            <point key="canvasLocation" x="-785" y="-561"/>
         </scene>
         <!--Navigation Controller - My Orders-->
         <scene sceneID="9C2-Dz-gLK">
@@ -445,7 +541,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VsL-g1-4DY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-871" y="-659"/>
+            <point key="canvasLocation" x="-1351" y="-1325"/>
         </scene>
     </scenes>
     <resources>
@@ -495,6 +591,14 @@
                 <relationship kind="outlet" name="orderNumber" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="purchaseDate" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="status" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="StoreAddressViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/StoreAddressViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="address" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="distanceMessage" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="storeName" candidateClass="UILabel"/>
             </relationships>
         </class>
     </classes>

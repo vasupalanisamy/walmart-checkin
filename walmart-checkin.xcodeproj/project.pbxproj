@@ -24,6 +24,8 @@
 		69275F76163920E6006F031F /* RestClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 69275F75163920E6006F031F /* RestClient.m */; };
 		69275F7C163A76BF006F031F /* OrderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 69275F7B163A76BE006F031F /* OrderTableViewCell.m */; };
 		69275F7F163A8235006F031F /* OrderDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69275F7E163A8235006F031F /* OrderDetailViewController.m */; };
+		69275F86163DF87D006F031F /* StoreAddressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69275F85163DF87D006F031F /* StoreAddressViewController.m */; };
+		69275F8C163E0605006F031F /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69275F8B163E0605006F031F /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +57,9 @@
 		69275F7B163A76BE006F031F /* OrderTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderTableViewCell.m; sourceTree = "<group>"; };
 		69275F7D163A8235006F031F /* OrderDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderDetailViewController.h; sourceTree = "<group>"; };
 		69275F7E163A8235006F031F /* OrderDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderDetailViewController.m; sourceTree = "<group>"; };
+		69275F84163DF87C006F031F /* StoreAddressViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoreAddressViewController.h; sourceTree = "<group>"; };
+		69275F85163DF87D006F031F /* StoreAddressViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoreAddressViewController.m; sourceTree = "<group>"; };
+		69275F8B163E0605006F031F /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69275F8C163E0605006F031F /* CoreLocation.framework in Frameworks */,
 				69275F1B163518D3006F031F /* UIKit.framework in Frameworks */,
 				69275F1D163518D3006F031F /* Foundation.framework in Frameworks */,
 				69275F1F163518D3006F031F /* CoreGraphics.framework in Frameworks */,
@@ -74,6 +80,7 @@
 		69275F0B163518D3006F031F = {
 			isa = PBXGroup;
 			children = (
+				69275F8B163E0605006F031F /* CoreLocation.framework */,
 				69275F20163518D3006F031F /* walmart-checkin */,
 				69275F19163518D3006F031F /* Frameworks */,
 				69275F17163518D3006F031F /* Products */,
@@ -119,6 +126,8 @@
 				69275F7B163A76BE006F031F /* OrderTableViewCell.m */,
 				69275F7D163A8235006F031F /* OrderDetailViewController.h */,
 				69275F7E163A8235006F031F /* OrderDetailViewController.m */,
+				69275F84163DF87C006F031F /* StoreAddressViewController.h */,
+				69275F85163DF87D006F031F /* StoreAddressViewController.m */,
 			);
 			path = "walmart-checkin";
 			sourceTree = "<group>";
@@ -213,6 +222,7 @@
 				69275F76163920E6006F031F /* RestClient.m in Sources */,
 				69275F7C163A76BF006F031F /* OrderTableViewCell.m in Sources */,
 				69275F7F163A8235006F031F /* OrderDetailViewController.m in Sources */,
+				69275F86163DF87D006F031F /* StoreAddressViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

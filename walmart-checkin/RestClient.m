@@ -12,7 +12,7 @@
 - (NSDictionary*) authenticateUser: (NSString*) userName withPassword: (NSString*) password {
     NSLog(@"authenticateUser URL - %@", [BASE_URL stringByAppendingString:LOGIN_URL]);
     NSString *url = [[NSString alloc] initWithFormat:[BASE_URL stringByAppendingString:LOGIN_URL],userName, password];
-    NSDictionary *json = (NSDictionary*)[self callGetAPI:url];
+    NSDictionary *json = (NSDictionary*)[RestClient callGetAPI:url];
     if([json objectForKey:@"id"] == [NSNull null]){
         return nil;
     } else {
@@ -23,18 +23,30 @@
 - (NSArray*) fetchOrders: (NSString*) profileId {
     NSLog(@"fetchOrders URL - %@", [BASE_URL stringByAppendingString:ORDERS_BY_PROFILE]);
     NSString *url = [[NSString alloc] initWithFormat:[BASE_URL stringByAppendingString:ORDERS_BY_PROFILE],profileId];
-    NSArray *json = (NSArray*)[self callGetAPI:url];
+    NSArray *json = (NSArray*)[RestClient callGetAPI:url];
     return json;
 }
 
 - (NSArray*) fetchOrdersUsingOrderId: (NSString*) orderId {
     NSLog(@"fetchOrders URL - %@", [BASE_URL stringByAppendingString:ORDERS_BY_ORDERID]);
     NSString *url = [[NSString alloc] initWithFormat:[BASE_URL stringByAppendingString:ORDERS_BY_PROFILE],orderId];
-    NSArray *json = (NSArray*)[self callGetAPI:url];
+    NSArray *json = (NSArray*)[RestClient callGetAPI:url];
     return json;
 }
 
-- (NSObject*) callGetAPI: (NSString*) url {
++ (NSDictionary*) findDistanceFromSource: (NSString*) source toDestination: (NSString*) destination {
+    NSString *url = [[NSString alloc] initWithFormat:GOOGLE_API,source, destination];
+    NSDictionary *json = (NSDictionary*)[self callGetAPI:url];
+    NSLog(@"status - %@", [json objectForKey:@"status"]);
+    NSString *status = [[NSString alloc]initWithFormat:@"%@", [json objectForKey:@"status"]];
+    if([status isEqualToString:@"OK"]){
+        return json;
+    } else {
+        return nil;
+    }
+}
+
++ (NSObject*) callGetAPI: (NSString*) url {
     NSURL *nsurl = [[NSURL alloc] initWithString:url];
     NSError *error = nil;
     //getting the data
@@ -45,4 +57,5 @@
     NSLog(@"responseString - %@", responseString);
     return json;
 }
+
 @end

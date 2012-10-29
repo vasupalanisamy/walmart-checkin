@@ -7,6 +7,7 @@
 //
 
 #import "OrderDetailViewController.h"
+#import "StoreAddressViewController.h"
 
 @interface OrderDetailViewController ()
 
@@ -49,6 +50,7 @@
     UIImage *img = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:imagePath]]];
     self.image.image = img;
     self.itemCount.text = [[NSString alloc] initWithFormat:@"%u",lineItems.count];
+    self.orderTotal.text = [@"$" stringByAppendingFormat:@"%@",[self.order valueForKey:@"price"]];
     
 }
 
@@ -56,6 +58,13 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(void) prepareForSegue:(UIStoryboardPopoverSegue *)segue sender:(OrderDetailViewController*)sender
+{
+    StoreAddressViewController *store = (StoreAddressViewController *) segue.destinationViewController;
+    store.order = self.order;
+    //NSLog(@"i am here %@", detail);
 }
 
 @end

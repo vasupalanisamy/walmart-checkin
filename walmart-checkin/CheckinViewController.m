@@ -48,6 +48,8 @@
     NSDictionary *json = [client authenticateUser:self.userName.text withPassword:self.password.text];
     if(json == nil)
     {
+        CheckinAppDelegate *delegate =  [[UIApplication sharedApplication] delegate];
+        delegate.loggedIn = @"FALSE";
         UIAlertView *message = [[UIAlertView alloc] initWithTitle:@"Authentication Unsuccessful"
                                                           message:@"The credentials entered are not correct. Please try again."
                                                          delegate:nil

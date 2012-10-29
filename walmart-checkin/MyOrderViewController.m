@@ -49,11 +49,11 @@
                                                 cancelButtonTitle:@"OK"
                                                 otherButtonTitles:nil];
         [message show];
+    } else {
+        RestClient *client = [[RestClient alloc] init];
+        self.orders = [client fetchOrders:delegate.profileId];
+        NSLog(@"order id %@", [[self.orders objectAtIndex:0] objectForKey:@"orderId"]);
     }
-    RestClient *client = [[RestClient alloc] init];
-    self.orders = [client fetchOrders:delegate.profileId];
-    
-    NSLog(@"order id %@", [[self.orders objectAtIndex:0] objectForKey:@"orderId"]);
 }
 - (void)didReceiveMemoryWarning
 {
@@ -114,7 +114,6 @@
 
 -(void) prepareForSegue:(UIStoryboardPopoverSegue *)segue sender:(OrderTableViewCell*)sender
 {
-    NSLog(@"i am here");
     OrderDetailViewController *detail = (OrderDetailViewController *) segue.destinationViewController;
     detail.order = [self.orders objectAtIndex:[sender.cellIdex intValue]];
     //NSLog(@"i am here %@", detail);
