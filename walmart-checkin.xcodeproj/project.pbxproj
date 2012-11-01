@@ -13,8 +13,8 @@
 		69275F25163518D3006F031F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 69275F23163518D3006F031F /* InfoPlist.strings */; };
 		69275F27163518D3006F031F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 69275F26163518D3006F031F /* main.m */; };
 		69275F2B163518D3006F031F /* CheckinAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 69275F2A163518D3006F031F /* CheckinAppDelegate.m */; };
-		69275F2D163518D3006F031F /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 69275F2C163518D3006F031F /* Default.png */; };
-		69275F2F163518D3006F031F /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 69275F2E163518D3006F031F /* Default@2x.png */; };
+		69275F2D163518D3006F031F /* Default_old.png in Resources */ = {isa = PBXBuildFile; fileRef = 69275F2C163518D3006F031F /* Default_old.png */; };
+		69275F2F163518D3006F031F /* Default@2x_old.png in Resources */ = {isa = PBXBuildFile; fileRef = 69275F2E163518D3006F031F /* Default@2x_old.png */; };
 		69275F31163518D3006F031F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 69275F30163518D3006F031F /* Default-568h@2x.png */; };
 		69275F34163518D3006F031F /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69275F32163518D3006F031F /* MainStoryboard.storyboard */; };
 		69275F37163518D3006F031F /* CheckinViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69275F36163518D3006F031F /* CheckinViewController.m */; };
@@ -26,10 +26,31 @@
 		69275F7F163A8235006F031F /* OrderDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69275F7E163A8235006F031F /* OrderDetailViewController.m */; };
 		69275F86163DF87D006F031F /* StoreAddressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69275F85163DF87D006F031F /* StoreAddressViewController.m */; };
 		69275F8C163E0605006F031F /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69275F8B163E0605006F031F /* CoreLocation.framework */; };
+		69275F8F163E1FE8006F031F /* PictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69275F8E163E1FE7006F031F /* PictureViewController.m */; };
+		69275F9A163F5DF4006F031F /* SimplePost.m in Sources */ = {isa = PBXBuildFile; fileRef = 69275F99163F5DF4006F031F /* SimplePost.m */; };
+		69275F9D163FD206006F031F /* walmart.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 69275F9C163FD206006F031F /* walmart.jpeg */; };
+		69275FA516408709006F031F /* Default.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 69275FA416408708006F031F /* Default.jpg */; };
+		69275FA916409046006F031F /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 69275FA816409046006F031F /* Default.png */; };
+		69275FAB16409E0F006F031F /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 69275FAA16409E0F006F031F /* Default@2x.png */; };
+		69275FAD1640B8FD006F031F /* vod.png in Resources */ = {isa = PBXBuildFile; fileRef = 69275FAC1640B8FD006F031F /* vod.png */; };
+		69275FAF1640C0DC006F031F /* email_icon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 69275FAE1640C0DB006F031F /* email_icon.jpg */; };
+		69275FB51640C9E2006F031F /* icon_iphone4.png in Resources */ = {isa = PBXBuildFile; fileRef = 69275FB41640C9E2006F031F /* icon_iphone4.png */; };
+		69275FB71640CC4E006F031F /* icon_iphone4.png in Resources */ = {isa = PBXBuildFile; fileRef = 69275FB61640CC4E006F031F /* icon_iphone4.png */; };
+		69275FBB1640CCB7006F031F /* icon_iphone3.png in Resources */ = {isa = PBXBuildFile; fileRef = 69275FBA1640CCB6006F031F /* icon_iphone3.png */; };
+		69275FBC1640CD4B006F031F /* icon_iphone3.png in Resources */ = {isa = PBXBuildFile; fileRef = 69275FB81640CCB0006F031F /* icon_iphone3.png */; };
+		69275FBE1640D60B006F031F /* pin_blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 69275FBD1640D60B006F031F /* pin_blue.png */; };
+		69275FC01640D8B2006F031F /* pin_blue@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 69275FBF1640D8B1006F031F /* pin_blue@2x.png */; };
+		69275FC21640DA69006F031F /* tabBarHome.png in Resources */ = {isa = PBXBuildFile; fileRef = 69275FC11640DA69006F031F /* tabBarHome.png */; };
+		69275FC41640DA88006F031F /* tabBarHome@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 69275FC31640DA87006F031F /* tabBarHome@2x.png */; };
+		69275FC71640DC14006F031F /* tabBarCart.png in Resources */ = {isa = PBXBuildFile; fileRef = 69275FC51640DC12006F031F /* tabBarCart.png */; };
+		69275FC81640DC14006F031F /* tabBarCart@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 69275FC61640DC13006F031F /* tabBarCart@2x.png */; };
+		69275FCA1640E676006F031F /* checkin.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 69275FC91640E675006F031F /* checkin.jpeg */; };
+		69275FCC1640EDEC006F031F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69275FCB1640EDEB006F031F /* QuartzCore.framework */; };
+		69275FD21641DEB9006F031F /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 69275FD11641DEB9006F031F /* Settings.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		69275F16163518D3006F031F /* walmart-checkin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "walmart-checkin.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		69275F16163518D3006F031F /* WalmartCheckin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WalmartCheckin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69275F1A163518D3006F031F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		69275F1C163518D3006F031F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		69275F1E163518D3006F031F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -39,8 +60,8 @@
 		69275F28163518D3006F031F /* walmart-checkin-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "walmart-checkin-Prefix.pch"; sourceTree = "<group>"; };
 		69275F29163518D3006F031F /* CheckinAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CheckinAppDelegate.h; sourceTree = "<group>"; };
 		69275F2A163518D3006F031F /* CheckinAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CheckinAppDelegate.m; sourceTree = "<group>"; };
-		69275F2C163518D3006F031F /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		69275F2E163518D3006F031F /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		69275F2C163518D3006F031F /* Default_old.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default_old.png; sourceTree = "<group>"; };
+		69275F2E163518D3006F031F /* Default@2x_old.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x_old.png"; sourceTree = "<group>"; };
 		69275F30163518D3006F031F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		69275F33163518D3006F031F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		69275F35163518D3006F031F /* CheckinViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CheckinViewController.h; sourceTree = "<group>"; };
@@ -60,6 +81,29 @@
 		69275F84163DF87C006F031F /* StoreAddressViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoreAddressViewController.h; sourceTree = "<group>"; };
 		69275F85163DF87D006F031F /* StoreAddressViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoreAddressViewController.m; sourceTree = "<group>"; };
 		69275F8B163E0605006F031F /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		69275F8D163E1FE7006F031F /* PictureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PictureViewController.h; sourceTree = "<group>"; };
+		69275F8E163E1FE7006F031F /* PictureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PictureViewController.m; sourceTree = "<group>"; };
+		69275F98163F5DF3006F031F /* SimplePost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimplePost.h; sourceTree = "<group>"; };
+		69275F99163F5DF4006F031F /* SimplePost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimplePost.m; sourceTree = "<group>"; };
+		69275F9C163FD206006F031F /* walmart.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = walmart.jpeg; sourceTree = "<group>"; };
+		69275FA416408708006F031F /* Default.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Default.jpg; sourceTree = "<group>"; };
+		69275FA816409046006F031F /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		69275FAA16409E0F006F031F /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		69275FAC1640B8FD006F031F /* vod.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vod.png; sourceTree = "<group>"; };
+		69275FAE1640C0DB006F031F /* email_icon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = email_icon.jpg; sourceTree = "<group>"; };
+		69275FB41640C9E2006F031F /* icon_iphone4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_iphone4.png; sourceTree = "<group>"; };
+		69275FB61640CC4E006F031F /* icon_iphone4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_iphone4.png; sourceTree = "<group>"; };
+		69275FB81640CCB0006F031F /* icon_iphone3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_iphone3.png; path = "../../walmartlabs-walmart-ios-a7fc5211ccd71b53becacf43c57dd60dd541800c/images/icon_iphone3.png"; sourceTree = "<group>"; };
+		69275FBA1640CCB6006F031F /* icon_iphone3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_iphone3.png; sourceTree = "<group>"; };
+		69275FBD1640D60B006F031F /* pin_blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pin_blue.png; sourceTree = "<group>"; };
+		69275FBF1640D8B1006F031F /* pin_blue@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pin_blue@2x.png"; sourceTree = "<group>"; };
+		69275FC11640DA69006F031F /* tabBarHome.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tabBarHome.png; sourceTree = "<group>"; };
+		69275FC31640DA87006F031F /* tabBarHome@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabBarHome@2x.png"; sourceTree = "<group>"; };
+		69275FC51640DC12006F031F /* tabBarCart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tabBarCart.png; sourceTree = "<group>"; };
+		69275FC61640DC13006F031F /* tabBarCart@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabBarCart@2x.png"; sourceTree = "<group>"; };
+		69275FC91640E675006F031F /* checkin.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = checkin.jpeg; sourceTree = "<group>"; };
+		69275FCB1640EDEB006F031F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		69275FD11641DEB9006F031F /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +111,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69275FCC1640EDEC006F031F /* QuartzCore.framework in Frameworks */,
 				69275F8C163E0605006F031F /* CoreLocation.framework in Frameworks */,
 				69275F1B163518D3006F031F /* UIKit.framework in Frameworks */,
 				69275F1D163518D3006F031F /* Foundation.framework in Frameworks */,
@@ -80,6 +125,10 @@
 		69275F0B163518D3006F031F = {
 			isa = PBXGroup;
 			children = (
+				69275FD11641DEB9006F031F /* Settings.bundle */,
+				69275FCB1640EDEB006F031F /* QuartzCore.framework */,
+				69275FBA1640CCB6006F031F /* icon_iphone3.png */,
+				69275FB61640CC4E006F031F /* icon_iphone4.png */,
 				69275F8B163E0605006F031F /* CoreLocation.framework */,
 				69275F20163518D3006F031F /* walmart-checkin */,
 				69275F19163518D3006F031F /* Frameworks */,
@@ -90,7 +139,7 @@
 		69275F17163518D3006F031F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				69275F16163518D3006F031F /* walmart-checkin.app */,
+				69275F16163518D3006F031F /* WalmartCheckin.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -108,6 +157,8 @@
 		69275F20163518D3006F031F /* walmart-checkin */ = {
 			isa = PBXGroup;
 			children = (
+				69275F98163F5DF3006F031F /* SimplePost.h */,
+				69275F99163F5DF4006F031F /* SimplePost.m */,
 				69275F29163518D3006F031F /* CheckinAppDelegate.h */,
 				69275F2A163518D3006F031F /* CheckinAppDelegate.m */,
 				69275F32163518D3006F031F /* MainStoryboard.storyboard */,
@@ -128,6 +179,8 @@
 				69275F7E163A8235006F031F /* OrderDetailViewController.m */,
 				69275F84163DF87C006F031F /* StoreAddressViewController.h */,
 				69275F85163DF87D006F031F /* StoreAddressViewController.m */,
+				69275F8D163E1FE7006F031F /* PictureViewController.h */,
+				69275F8E163E1FE7006F031F /* PictureViewController.m */,
 			);
 			path = "walmart-checkin";
 			sourceTree = "<group>";
@@ -135,12 +188,27 @@
 		69275F21163518D3006F031F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				69275FC91640E675006F031F /* checkin.jpeg */,
+				69275FC51640DC12006F031F /* tabBarCart.png */,
+				69275FC61640DC13006F031F /* tabBarCart@2x.png */,
+				69275FC31640DA87006F031F /* tabBarHome@2x.png */,
+				69275FC11640DA69006F031F /* tabBarHome.png */,
+				69275FBF1640D8B1006F031F /* pin_blue@2x.png */,
+				69275FBD1640D60B006F031F /* pin_blue.png */,
+				69275FB81640CCB0006F031F /* icon_iphone3.png */,
+				69275FB41640C9E2006F031F /* icon_iphone4.png */,
+				69275FAE1640C0DB006F031F /* email_icon.jpg */,
+				69275FAC1640B8FD006F031F /* vod.png */,
+				69275FAA16409E0F006F031F /* Default@2x.png */,
+				69275FA816409046006F031F /* Default.png */,
+				69275FA416408708006F031F /* Default.jpg */,
+				69275F9C163FD206006F031F /* walmart.jpeg */,
 				69275F22163518D3006F031F /* walmart-checkin-Info.plist */,
 				69275F23163518D3006F031F /* InfoPlist.strings */,
 				69275F26163518D3006F031F /* main.m */,
 				69275F28163518D3006F031F /* walmart-checkin-Prefix.pch */,
-				69275F2C163518D3006F031F /* Default.png */,
-				69275F2E163518D3006F031F /* Default@2x.png */,
+				69275F2C163518D3006F031F /* Default_old.png */,
+				69275F2E163518D3006F031F /* Default@2x_old.png */,
 				69275F30163518D3006F031F /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
@@ -163,7 +231,7 @@
 			);
 			name = "walmart-checkin";
 			productName = "walmart-checkin";
-			productReference = 69275F16163518D3006F031F /* walmart-checkin.app */;
+			productReference = 69275F16163518D3006F031F /* WalmartCheckin.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -199,10 +267,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				69275F25163518D3006F031F /* InfoPlist.strings in Resources */,
-				69275F2D163518D3006F031F /* Default.png in Resources */,
-				69275F2F163518D3006F031F /* Default@2x.png in Resources */,
+				69275F2D163518D3006F031F /* Default_old.png in Resources */,
+				69275F2F163518D3006F031F /* Default@2x_old.png in Resources */,
 				69275F31163518D3006F031F /* Default-568h@2x.png in Resources */,
 				69275F34163518D3006F031F /* MainStoryboard.storyboard in Resources */,
+				69275F9D163FD206006F031F /* walmart.jpeg in Resources */,
+				69275FA516408709006F031F /* Default.jpg in Resources */,
+				69275FA916409046006F031F /* Default.png in Resources */,
+				69275FAB16409E0F006F031F /* Default@2x.png in Resources */,
+				69275FAD1640B8FD006F031F /* vod.png in Resources */,
+				69275FAF1640C0DC006F031F /* email_icon.jpg in Resources */,
+				69275FB51640C9E2006F031F /* icon_iphone4.png in Resources */,
+				69275FB71640CC4E006F031F /* icon_iphone4.png in Resources */,
+				69275FBB1640CCB7006F031F /* icon_iphone3.png in Resources */,
+				69275FBC1640CD4B006F031F /* icon_iphone3.png in Resources */,
+				69275FBE1640D60B006F031F /* pin_blue.png in Resources */,
+				69275FC01640D8B2006F031F /* pin_blue@2x.png in Resources */,
+				69275FC21640DA69006F031F /* tabBarHome.png in Resources */,
+				69275FC41640DA88006F031F /* tabBarHome@2x.png in Resources */,
+				69275FC71640DC14006F031F /* tabBarCart.png in Resources */,
+				69275FC81640DC14006F031F /* tabBarCart@2x.png in Resources */,
+				69275FCA1640E676006F031F /* checkin.jpeg in Resources */,
+				69275FD21641DEB9006F031F /* Settings.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,6 +309,8 @@
 				69275F7C163A76BF006F031F /* OrderTableViewCell.m in Sources */,
 				69275F7F163A8235006F031F /* OrderDetailViewController.m in Sources */,
 				69275F86163DF87D006F031F /* StoreAddressViewController.m in Sources */,
+				69275F8F163E1FE8006F031F /* PictureViewController.m in Sources */,
+				69275F9A163F5DF4006F031F /* SimplePost.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,10 +389,12 @@
 		69275F3B163518D3006F031F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: VASU PALANISAMY (9JFBZB473H)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "walmart-checkin/walmart-checkin-Prefix.pch";
 				INFOPLIST_FILE = "walmart-checkin/walmart-checkin-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = WalmartCheckin;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -312,10 +402,12 @@
 		69275F3C163518D3006F031F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: VASU PALANISAMY (9JFBZB473H)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "walmart-checkin/walmart-checkin-Prefix.pch";
 				INFOPLIST_FILE = "walmart-checkin/walmart-checkin-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = WalmartCheckin;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

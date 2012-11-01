@@ -7,7 +7,7 @@
 //
 
 #import "OrderDetailViewController.h"
-#import "StoreAddressViewController.h"
+#import "PictureViewController.h"
 
 @interface OrderDetailViewController ()
 
@@ -36,7 +36,7 @@
 {
     [super viewDidLoad];
     self.orderNumber.text = [[NSString alloc] initWithFormat:@"%@",[self.order valueForKey:@"orderId"]];
-    long long submittedDate = [[self.order valueForKey:@"submittedDate"] longLongValue]/1000;
+    long long submittedDate = [[self.order valueForKey:@"checkinTime"] longLongValue]/1000;
     NSDate *date = [[NSDate alloc] initWithTimeIntervalSince1970:submittedDate];
     NSLog(@"%@", date);
     NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
@@ -60,11 +60,10 @@
     // Dispose of any resources that can be recreated.
 }
 
--(void) prepareForSegue:(UIStoryboardPopoverSegue *)segue sender:(OrderDetailViewController*)sender
+-(void) prepareForSegue:(UIStoryboardPopoverSegue *)segue sender:(PictureViewController*)sender
 {
-    StoreAddressViewController *store = (StoreAddressViewController *) segue.destinationViewController;
-    store.order = self.order;
-    //NSLog(@"i am here %@", detail);
+    PictureViewController *pictureController = (PictureViewController *) segue.destinationViewController;
+    pictureController.order = self.order;
 }
 
 @end

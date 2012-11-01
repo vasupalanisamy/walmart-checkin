@@ -18,5 +18,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *custName;
 
 @property (weak, nonatomic) IBOutlet UILabel *custEmail;
+//@property (weak, nonatomic) IBOutlet UIWebView *webView;
 
 @end

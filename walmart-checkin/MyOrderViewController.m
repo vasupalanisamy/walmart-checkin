@@ -11,6 +11,7 @@
 #import "RestClient.h"
 #import "OrderTableViewCell.h"
 #import "OrderDetailViewController.h"
+#import "QuartzCore/QuartzCore.h"
 @interface MyOrderViewController ()
 
 @end
@@ -32,7 +33,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
+    //self.tableView.layer.borderWidth = 2.0;
+    //self.tableView.cornerRadius = YES;
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
  
@@ -40,6 +42,45 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 - (void)viewWillAppear:(BOOL)animated {
+    CheckinAppDelegate *delegate =  [[UIApplication sharedApplication] delegate];
+    if(delegate.loggedIn == @"TRUE") {
+        RestClient *client = [[RestClient alloc] init];
+        self.orders = [client fetchOrders:delegate.profileId];
+        NSLog(@"order id %@", [[self.orders objectAtIndex:0] objectForKey:@"orderId"]);
+        //self.navigationController.navigationBar.tintColor = [UIColor colorWithRed:117/255.0f green:4/255.0f blue:32/255.0f alpha:1];
+        self.navigationController.navigationBar.tintColor = [UIColor colorWithRed:70/255.0f green:146/255.0f blue:250/255.0f alpha:1];
+        //self.navigationController.navigationBar.tintColor = UIColor.giqBarTintColor;
+        [self.tableView reloadData];
+        //CALayer *l1 =
+        //[[self.tableView layer] setMasksToBounds:YES];
+        //[l1 setMasksToBounds:YES];
+        //[l1 setCornerRadius:10.0];
+        //[l1 setBorderWidth:2.0];
+        //self.tableView.masksToBounds = YES;
+        //[l1 setMasksToBounds:YES];
+        //[l1 setCornerRadius:10.0];
+        //[l1 setBorderWidth:2.0];
+    }
+    /*else {
+        [self.tabBarController setSelectedIndex:0];
+    }*/
+}
+/*- (BOOL)tabBarController:(UITabBarController *)tabBarController shouldSelectViewController:(UIViewController *)viewController{
+    
+    if(self.tabBarController.selectedIndex == 0){
+        
+        UIAlertView *message = [[UIAlertView alloc] initWithTitle:@""
+                                                          message:@"Please signin to continue."
+                                                         delegate:nil
+                                                cancelButtonTitle:@"OK"
+                                                otherButtonTitles:nil];
+        [message show];
+            
+        return(FALSE);
+    }
+    return(TRUE);
+}*/
+- (void)viewDidAppear:(BOOL)animated {
     CheckinAppDelegate *delegate =  [[UIApplication sharedApplication] delegate];
     if(delegate.loggedIn != @"TRUE") {
         [self.tabBarController setSelectedIndex:0];
@@ -49,10 +90,6 @@
                                                 cancelButtonTitle:@"OK"
                                                 otherButtonTitles:nil];
         [message show];
-    } else {
-        RestClient *client = [[RestClient alloc] init];
-        self.orders = [client fetchOrders:delegate.profileId];
-        NSLog(@"order id %@", [[self.orders objectAtIndex:0] objectForKey:@"orderId"]);
     }
 }
 - (void)didReceiveMemoryWarning
@@ -103,6 +140,9 @@
     cell.noOfItems.text = [[NSString alloc] initWithFormat:@"%u",lineItems.count];
     
     cell.cellIdex = [[NSNumber alloc]initWithInt: indexPath.row];
+    cell.layer.borderWidth = 1.0;
+    cell.layer.cornerRadius = 8.0f;
+    cell.layer.masksToBounds = YES;
     // Configure the cell...
     
     return cell;

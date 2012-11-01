@@ -10,7 +10,7 @@
 #import "CheckinAppDelegate.h"
 #import "RestClient.h"
 @interface CheckinViewController ()
-
+@property NSString* pictureUrl;
 @end
 
 @implementation CheckinViewController
@@ -22,10 +22,25 @@
 @synthesize photo = _photo;
 @synthesize custName = _custName;
 @synthesize custEmail = _custEmail;
+@synthesize pictureUrl = _pictureUrl;
+
+//@synthesize webView = _webView;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"Default.jpg"]];
+	// Do any additional setup after loading the view, typically from a nib.
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    if(self.pictureUrl != nil) {
+        self.photo.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:
+                                                   [NSURL URLWithString: [[RestClient getHostName] stringByAppendingString:self.pictureUrl]]]];
+    } else {
+        self.photo.image = nil;
+    }
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -60,10 +75,12 @@
         CheckinAppDelegate *delegate =  [[UIApplication sharedApplication] delegate];
         delegate.loggedIn = @"TRUE";
         delegate.profileId = [json objectForKey:@"id"];
-        self.tabBar.title = @"My Account";
+        self.tabBar.title = @"Home";
+        self.pictureUrl = [json objectForKey:@"pictureURL"];
         if([json objectForKey:@"pictureURL"] != [NSNull null]) {
+            self.pictureUrl = [json objectForKey:@"pictureURL"];
             self.photo.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:
-                                                   [NSURL URLWithString: [json objectForKey:@"pictureURL"]]]];
+                                                       [NSURL URLWithString: [[RestClient getHostName] stringByAppendingString:[json objectForKey:@"pictureURL"]]]]];
         } else {
             self.photo.image = nil;
         }
@@ -72,9 +89,13 @@
         custNameLbl = [custNameLbl stringByAppendingString:@" "];
         custNameLbl = [custNameLbl stringByAppendingString:[json objectForKey:@"lastName"]];
         self.custName.text = custNameLbl;
-        NSString *custEmailLbl = @"Email: ";
-        custEmailLbl = [custEmailLbl stringByAppendingString:[json objectForKey:@"email"]];
+        //NSString *custEmailLbl = @"Email: ";
+        //custEmailLbl = [custEmailLbl stringByAppendingString:[json objectForKey:@"email"]];
+        NSString *custEmailLbl = [json objectForKey:@"email"];
+
         self.custEmail.text = custEmailLbl;
+        /*NSURLRequest *requestObj = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://mobile.walmart.com/m/votd?product_id=vod:21092673"]];
+        [self.webView loadRequest:requestObj];*/
     }
     
 }
@@ -87,6 +108,7 @@
     self.myAccount.hidden = YES;
     self.userName.text = @"";
     self.password.text = @"";
+    [[self.tabBarController.viewControllers objectAtIndex:1] popToRootViewControllerAnimated:YES];
 }
 
 -(void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{

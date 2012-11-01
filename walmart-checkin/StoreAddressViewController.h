@@ -10,10 +10,12 @@
 #import <CoreLocation/CoreLocation.h>    
 
 @interface StoreAddressViewController : UIViewController <CLLocationManagerDelegate>
+@property (weak, nonatomic) IBOutlet UILabel *addressLabel;
 @property (weak, nonatomic) IBOutlet UILabel *storeName;
-@property (weak, nonatomic) IBOutlet UILabel *address;
-@property (weak, nonatomic) IBOutlet UILabel *distanceMessage;
-@property (weak, nonatomic) NSDictionary* order;
-@property (strong, nonatomic) CLLocationManager* locationManager;
-
+@property (weak, nonatomic) IBOutlet UILabel *distanceLabel;
+@property (weak, nonatomic) IBOutlet UILabel *durationLabel;
+@property (strong, nonatomic) NSString *storeNameString;
+@property (strong, nonatomic) NSString *addressString;
+@property (strong, nonatomic) NSString *distanceString;
+@property (strong, nonatomic) NSString *durationString;
 @end
